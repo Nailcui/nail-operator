@@ -1,0 +1,24 @@
+# permissions for end users to edit nails.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: nail-editor-role
+rules:
+- apiGroups:
+  - test.nailcui.github.io
+  resources:
+  - nails
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - test.nailcui.github.io
+  resources:
+  - nails/status
+  verbs:
+  - get

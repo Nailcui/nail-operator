@@ -1,0 +1,8 @@
+apiVersion: test.nailcui.github.io/v1alpha1
+kind: Nail
+metadata:
+  name: nail-sample
+spec:
+  # Add fields here
+  foo: bar
+  replicas: 3

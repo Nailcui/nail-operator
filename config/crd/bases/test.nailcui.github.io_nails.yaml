@@ -1,0 +1,62 @@
+
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.4.1
+  creationTimestamp: null
+  name: nails.test.nailcui.github.io
+spec:
+  group: test.nailcui.github.io
+  names:
+    kind: Nail
+    listKind: NailList
+    plural: nails
+    singular: nail
+  scope: Namespaced
+  versions:
+  - name: v1alpha1
+    schema:
+      openAPIV3Schema:
+        description: Nail is the Schema for the nails API
+        properties:
+          apiVersion:
+            description: 'APIVersion defines the versioned schema of this representation
+              of an object. Servers should convert recognized schemas to the latest
+              internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+            type: string
+          kind:
+            description: 'Kind is a string value representing the REST resource this
+              object represents. Servers may infer this from the endpoint the client
+              submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+            type: string
+          metadata:
+            type: object
+          spec:
+            description: NailSpec defines the desired state of Nail
+            properties:
+              foo:
+                description: Foo is an example field of Nail. Edit nail_types.go to
+                  remove/update
+                type: string
+              replicas:
+                format: int32
+                type: integer
+            required:
+            - replicas
+            type: object
+          status:
+            description: NailStatus defines the observed state of Nail
+            type: object
+        type: object
+    served: true
+    storage: true
+    subresources:
+      status: {}
+status:
+  acceptedNames:
+    kind: ""
+    plural: ""
+  conditions: []
+  storedVersions: []

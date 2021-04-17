@@ -1,0 +1,20 @@
+# permissions for end users to view nails.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: nail-viewer-role
+rules:
+- apiGroups:
+  - test.nailcui.github.io
+  resources:
+  - nails
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - test.nailcui.github.io
+  resources:
+  - nails/status
+  verbs:
+  - get
