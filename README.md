@@ -3,11 +3,11 @@ nail-operator
 
 > operator-example
 
-[Kubernetes API 与 Operator，不为人知的开发者战争【知乎-阿里云云栖】](https://zhuanlan.zhihu.com/p/54633203)
-[operator-sdk [github]](https://github.com/operator-framework/operator-sdk)
-[operator-doc](https://sdk.operatorframework.io/)
-[一个 CI/CD operator的Demo](https://segmentfault.com/a/1190000023931203)
-[一个实践（有deployment代码）](https://blog.csdn.net/yunqiinsight/article/details/104929329)
+- [Kubernetes API 与 Operator，不为人知的开发者战争【知乎-阿里云云栖】](https://zhuanlan.zhihu.com/p/54633203)
+- [operator-sdk [github]](https://github.com/operator-framework/operator-sdk)
+- [operator-doc](https://sdk.operatorframework.io/)
+- [一个 CI/CD operator的Demo](https://segmentfault.com/a/1190000023931203)
+- [一个实践（有deployment代码）](https://blog.csdn.net/yunqiinsight/article/details/104929329)
 
 
 ## step by step
